@@ -17,4 +17,21 @@ spec:
           image: alexgure/multi-server
           ports:
             - containerPort: 5000
-            
+          env:
+            - name: REDIS_HOST
+              value: redis-cluster-ip-service
+            - name: REDIS_PORT
+              value: 6379
+            - name: PGHOST 
+              value: postgres-cluster-ip-service
+            - name: PGUSER
+              value: postgres
+            - name: PGDATABASE
+              value: postgres
+            - name: PGPORT
+              value: 5432
+              
+              
+              
+              
+              
